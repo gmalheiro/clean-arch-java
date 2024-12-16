@@ -14,8 +14,9 @@ public class UserController {
     private CreateUserInteractor createUserInteractor;
     private UserDTOMapper mapper;
 
-    public UserController(CreateUserInteractor createUserInteractor) {
+    public UserController(CreateUserInteractor createUserInteractor,UserDTOMapper mapper) {
         this.createUserInteractor = createUserInteractor;
+        this.mapper = mapper;
     }
 
     @PostMapping
